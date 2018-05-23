@@ -41,6 +41,7 @@
 			</ul>
 		</div>
 	</nav>
+	
 	<div id="map" style="width: 100%; height: 400px;"></div>
 
 	<!-- Naver Map Script -->
@@ -51,6 +52,11 @@
 		};
 
 		var map = new naver.maps.Map('map', mapOptions);
+		
+		var marker = new naver.maps.Marker({
+		    position: new naver.maps.LatLng(37.3595704, 127.105399),
+		    map: map
+		});
 	</script>
 
 	<!-- Optional JavaScript -->
